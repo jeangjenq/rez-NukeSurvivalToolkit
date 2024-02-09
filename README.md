@@ -74,3 +74,15 @@ For a more in-depth look into the repo and menu structure, check the development
 View recent updates, tools additions, bug fixes, etc.
 
 [View the Changelog](CHANGELOG.md)
+
+# [Rez](https://github.com/AcademySoftwareFoundation/rez.git)
+To install this rez package of NukeSurvivalToolkit, simply clone this repo and execute this in the folder
+```bash
+rez build --install #--release # optionally
+```
+
+## Build
+The "build" system is just a copy of [NukeSurvivalToolkit](./NukeSurvivalToolkit/) to `REZ_BUILD_INSTALL_PATH`.
+
+## Package command
+Simple append of installed [NukeSurvivalToolkit](./NukeSurvivalToolkit/) from package path to `NUKE_PATH`.
