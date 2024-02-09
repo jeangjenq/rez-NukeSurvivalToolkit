@@ -35,3 +35,15 @@ Your/NukeSurvivalToolkit/FolderPath/Here text with your NukeSurvivalToolkit file
 6.) Save your init.py file, and restart your Nuke session
 
 7.) That’s it! Congrats, you will now see a little red multi-tool in your nuke toolbar.    
+
+# [Rez](https://github.com/AcademySoftwareFoundation/rez.git)
+To install this rez package of NukeSurvivalToolkit, simply clone this repo and execute this in the folder
+```bash
+rez build --install #--release # optionally
+```
+
+## Build
+The "build" system is just a copy of [NukeSurvivalToolkit](./NukeSurvivalToolkit/) to `REZ_BUILD_INSTALL_PATH`.
+
+## Package command
+Simple append of installed [NukeSurvivalToolkit](./NukeSurvivalToolkit/) from package path to `NUKE_PATH`.
