@@ -287,6 +287,7 @@ filterMenu.addSeparator()
 
 EdgesMenu = filterMenu.addMenu("Edges", icon="FilterErode.png")
 EdgesMenu.addCommand('apEdgePush AP', 'nuke.createNode("{}apEdgePush")'.format(prefixNST), icon='apEdgePush.png')
+EdgesMenu.addCommand('apEdgeCrush AP', 'nuke.createNode("{}apEdgeCrush")'.format(prefixNST), icon='Dither.png')
 EdgesMenu.addCommand('EdgeDetectAlias TL', "nuke.createNode('{}EdgeDetectAlias')".format(prefixNST), icon="FilterErod.png")
 EdgesMenu.addCommand('AntiAliasingFilter AG', "nuke.createNode('{}AntiAliasingFilter')".format(prefixNST), icon="nukepedia_icon.png")
 EdgesMenu.addCommand('ErodeSmooth TL', "nuke.createNode('{}ErodeSmooth')".format(prefixNST), icon="FilterErode.png")
@@ -349,6 +350,10 @@ apChromaMenu.addCommand('apChromaPremult AP', 'nuke.createNode("{}apChromaPremul
 filterMenu.addSeparator()
 
 filterMenu.addCommand('Chromatik SPIN', "nuke.createNode('{}Chromatik')".format(prefixNST), icon='spin_tools.png')
+filterMenu.addCommand("ChromaSmear LJ", "nuke.createNode('{}ChromaSmear')".format(prefixNST), icon="ColorLookup.png")
+
+filterMenu.addSeparator()
+
 filterMenu.addCommand('CatsEyeDefocus NKPD', "nuke.createNode('{}CatsEyeDefocus')".format(prefixNST), icon="nukepedia_icon.png")
 filterMenu.addCommand('DefocusSwirlyBokeh NKPD', "nuke.createNode('{}DefocusSwirlyBokeh')".format(prefixNST), icon="nukepedia_icon.png")
 filterMenu.addCommand('deHaze NKPD', "nuke.createNode('{}deHaze')".format(prefixNST), icon="nukepedia_icon.png")
@@ -500,7 +505,7 @@ transformMenu.addSeparator()
 
 transformMenu.addCommand('IIDistort EL', "nuke.createNode('{}IIDistort')".format(prefixNST), icon="nukepedia_icon.png")
 transformMenu.addCommand('bm_CameraShake BM', "nuke.createNode('{}bm_CameraShake')".format(prefixNST), icon="bm_CameraShake_icon.png")
-transformMenu.addCommand('ITransform FR', "nuke.createNode('{}ITransformU')".format(prefixNST), icon="STMap.png")
+transformMenu.addCommand('ITransform AE', "nuke.createNode('{}iTransform_ae')".format(prefixNST), icon="STMap.png")
 transformMenu.addCommand('MorphDissolve SPIN', "nuke.createNode('{}MorphDissolve')".format(prefixNST), icon="spin_tools.png")
 transformMenu.addCommand('RotoCentroid NKPD', "nuke.createNode('{}RotoCentroid')".format(prefixNST), icon="nukepedia_icon.png")
 transformMenu.addCommand('STmapInverse NKPD', "nuke.createNode('{}STmapInverse')".format(prefixNST), icon="nukepedia_icon.png")
@@ -536,6 +541,7 @@ ThreeDMenu.addCommand('DistanceBetween_CS NKPD', "nuke.createNode('{}DistanceBet
 ThreeDMenu.addCommand('Lightning3D EL', "nuke.createNode('{}Lightning3D')".format(prefixNST), icon="nukepedia_icon.png")
 ThreeDMenu.addCommand('Noise3DTexture NKPD', "nuke.createNode('{}Noise3DTexture')".format(prefixNST), icon="noise3dicon.png")
 ThreeDMenu.addCommand('GodRaysProjector CF', "nuke.createNode('{}GodRaysProjector')".format(prefixNST), icon="VolumeRays.png")
+ThreeDMenu.addCommand('MirrorDimension TL', "nuke.createNode('{}MirrorDimension')".format(prefixNST), icon="Mirror.png")
 
 ############################################################################################################
 ############################################################################################################
